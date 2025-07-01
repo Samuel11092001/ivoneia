@@ -407,6 +407,29 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+/* Estilo Sobre a Integra */
+section .sobrenos {
+  padding: 4%;
+}
+.sobrenos-titulo{
+  margin: auto;
+  span{
+  color: #009fdc;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-family: "Nunito";
+  }
+  h1{font-size: 64px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: "El Messiri";
+
+  }
+}
 
 /* --- Ajustes Responsivos --- */
 
