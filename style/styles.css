@@ -6,7 +6,7 @@ body {
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 100%;
   background-color: #fff;
@@ -56,6 +56,7 @@ body {
 }
 
 .hero {
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,32 +196,7 @@ body {
   margin: 0;
 }
 
-/* --- Ajustes Responsivos --- */
 
-@media (max-width: 900px) {
-  .image_section {
-    gap: 40px;
-  }
-
-  .image-card {
-    flex-basis: calc(50% - 20px);
-    max-width: 45%;
-  }
-}
-
-@media (max-width: 600px) {
-  .image_section {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 40px 15px;
-  }
-
-  .image-card {
-    max-width: 90%;
-    flex-basis: auto;
-  }
-}
 .image-card img {
   width: 48px;
   height: 48px; /* Alterado de 'auto' para uma altura fixa */
@@ -430,4 +406,92 @@ body {
   color: #444;
   font-size: 15px;
   line-height: 1.5;
+}
+
+/* --- Ajustes Responsivos --- */
+
+@media (max-width: 900px) {
+  .hero-image{
+    width: 0;
+  }
+  .hero{
+    gap: 20px;
+    background-image: url(../images/atendimento.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 70px;
+    flex-direction: column;
+  }
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    padding: 0;
+     p{color: white;  }
+    }
+  
+  .servicos-grid {
+    background-size: cover;
+    background-image: url(../images/Untitled.png);
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 60px;
+    padding: 0 20px;
+    justify-items: center;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .decoracao-curvas{
+    display: none;
+  }
+  .servico{
+    max-width: 366px;
+    width: 70%;
+  }
+  .image_section {
+    gap: 40px;
+  }
+
+  .image-card {
+    flex-basis: calc(50% - 20px);
+    max-width: 45%;
+  }
+  .grid-servicos{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto-card{
+    max-width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-image{
+    width: 0;
+  }
+  .image_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 15px;
+  }
+
+  .image-card {
+    max-width: 90%;
+    flex-basis: auto;
+  }
 }
