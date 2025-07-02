@@ -408,10 +408,12 @@ body {
   line-height: 1.5;
 }
 /* Estilo Sobre a Integra */
-section .sobrenos {
+.sobrenos {
   padding: 4%;
 }
 .sobrenos-titulo{
+  width: 50%;
+  text-align: center;
   margin: auto;
   span{
   color: #009fdc;
@@ -428,6 +430,17 @@ section .sobrenos {
     margin-bottom: 16px;
     font-family: "El Messiri";
 
+  }
+}
+.sobrenos-card{
+  display: flex;
+  .sobrenos-card-imagem{
+    position: absolute;
+  }
+  .sobrenos-card-frame{
+    position: relative;
+    top: -15px;
+    left: -15px;
   }
 }
 
