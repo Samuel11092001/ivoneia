@@ -21,6 +21,7 @@ body {
 
 .logo {
   margin: 0;
+  
 }
 
 .nav-links {
@@ -444,9 +445,96 @@ body {
   }
 }
 
+/* Estilizar Menu Mobile */
+
+.menumobile{
+  background-color: #ffffffc0;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  transition: 1s;
+  overflow: hidden;
+  
+
+}
+.menumobile-nav a{
+  text-align: center;
+  color: #02a4d5;
+  text-decoration: none;
+  display: block;
+  padding: 6% 3% ;
+  font-size: 58px;
+}
+.menumobile-nav a:hover{
+  transition: 1s;
+  background-color: #02a4d581;
+  color: #02516e;
+}
+button#btn-menu{
+  visibility: hidden;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+button#btn-menu.ativo .linha:nth-child(1){
+  transition: 1s;
+  transform: translateY(12px) rotate(-45deg);
+}
+button#btn-menu.ativo .linha:nth-child(3){
+  transition: 1s;
+  transform: translateY(-12px) rotate(45deg);
+}
+button#btn-menu.ativo .linha:nth-child(2){
+  width: 0px;
+  transition: 0.5s;
+}
+.linha{
+  width: 35px;
+  border-radius: 5px;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #ccc;
+  display: block;
+  position: relative;
+  transform-origin: center;
+  transition: 1s;
+
+}
+
 /* --- Ajustes Responsivos --- */
 
 @media (max-width: 900px) {
+
+  /* estilizar Menu Mobile */
+  .nav-links{
+    display: none;
+  }
+  .menumobile{
+    display: block;
+    
+  }
+  .menumobile.abrir{
+    visibility: visible;
+    height: calc(300vh - 80px);
+    transition: 1s;
+  }
+  button#btn-menu{
+    visibility: visible;
+  }
+
+
+  /* fim estilo Menu Mobile */
+  .logo{
+    width: 25%;
+  }
   .hero-image{
     width: 0;
   }
@@ -458,7 +546,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 250px;
     flex-direction: column;
   }
   .hero-content{
