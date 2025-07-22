@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <!-- Meta Tag para Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivoneia</title>
     <link rel="stylesheet" href="style/styles.css" />
   </head>
@@ -18,10 +20,10 @@
       <nav class="navbar">
         <img src="images/logo.jpg" alt="logo do site" class="logo" />
         <ul class="nav-links">
-          <li><a href="#">Diferenciais</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Seja um parceiro</a></li>
+          <li><a href="#servicos">Diferenciais</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobrenos">Sobre</a></li>
+          <li><a href="#facaparte">Seja um parceiro</a></li>
           <li>
             <a
               href="https://wa.me/5562994992741"
@@ -39,10 +41,10 @@
         <div class="menumobile" id="menumobile">
           
           <ul class="menumobile-nav">
-            <li><a href="#">Diferenciais</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Seja um parceiro</a></li>
+            <li><a href="#servicos">Diferenciais</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobrenos">Sobre</a></li>
+            <li><a href="#facaparte">Seja um parceiro</a></li>
             <li>
               <a
                 href="https://wa.me/5562994992741"
@@ -73,7 +75,7 @@
       <div></div>
     </section>
     <hr class="section-divider" />
-    <section class="image_section">
+    <section class="image_section" id="diferenciais">
       <div class="image-card">
         <img src="images/imagem1.jpg" alt="Imagem 1" />
         <h3>Psicologia com Sentido</h3>
@@ -238,64 +240,55 @@
         </div>
       </div>
     </section>
-    <section class="sobrenos">
+    <section class="sobrenos" id="sobrenos">
       <div class="sobrenos-titulo">
-        <span>
-          <p>Saiba mais sobre nós</p>
-        </span>
-        <H1>Sobre a Integra</H1>
+        <span><p>Saiba mais sobre nós</p></span>
+        <h1>Sobre a Integra</h1>
       </div>
 
       <div id="sobrenos-cards">
         <div class="sobrenos-card">
-          <div class="sobrenos-card image">
-            <img class="sobrenos-card-imagem" src="images/imgmissao.png" alt="">
+          <div class="sobrenos-card-img-container">
+            <img class="sobrenos-card-imagem" src="images/imgmissao.png" alt="Missão da Integra">
             <img class="sobrenos-card-frame" src="images/Frame.png" alt="">
           </div>
-          
-          <div class="sobrenos-card text">
+          <div class="sobrenos-card-text">
             <h2>Missão</h2>
             <p>Acreditamos no poder do diálogo para transformar relações e criar soluções duradoura. Por isso, nossa missão é:</p>
             <p>Promover a cultura da paz e a resolução amigavél de conflitos por meio de mediação e conciliação extrajudicial.</p>
           </div>
-        </div><!-- </div id="sobrenos-card">  -->
+        </div>
 
-        <div class="sobrenos-card">
-          <div class="sobrenos-card image">
-            <img class="sobrenos-card-imagem" src="images/imgvisao.png" alt="">
-            <img class="sobrenos-card-frame style="transform: rotateX(180deg);" src="images/Frame.png" alt="">
+        <div class="sobrenos-card reverse">
+           <div class="sobrenos-card-img-container">
+            <img class="sobrenos-card-imagem" src="images/imgvisao.png" alt="Visão da Integra">
+            <img class="sobrenos-card-frame" style="transform: rotateX(180deg);" src="images/Frame.png" alt="">
           </div>
-          
-          <div class="sobrenos-card text">
+          <div class="sobrenos-card-text">
             <h2>Visão</h2>
             <p>Olharmos para o futuro com o propósito e clareza, nossa visão é:</p>
             <p>Ser refência na solução de conflitos de forma rápida, eficaz e ética.</p>
           </div>
-        </div><!-- </div id="sobrenos-card">  -->
+        </div>
 
         <div class="sobrenos-card">
-          <div class="sobrenos-card-image">
-            <img class="sobrenos-card-imagem" src="images/imgvalores.png" alt="">
+           <div class="sobrenos-card-img-container">
+            <img class="sobrenos-card-imagem" src="images/imgvalores.png" alt="Valores da Integra">
             <img class="sobrenos-card-frame" src="images/Frame.png" alt="">
           </div>
-          
-          <div class="sobrenos-card text">
+          <div class="sobrenos-card-text">
             <h2>Valores</h2>
             <p>Na Integra, acreditamos em relações autênticas e acolhedoras, construídas com respeito e propósito. Conheça nossos valores:</p>
-            <ul class="sobrenos-card ul">
+            <ul class="sobrenos-card-ul">
               <li>Ética</li>
               <li>Imparcialidade</li>
               <li>Confidencialidade</li>
               <li>Empatia</li>
-
             </ul>
           </div>
-        </div><!-- </div id="sobrenos-card">  -->
+        </div>
 
-        
-
-
-      </div><!-- </div id="sobrenos-cards">  -->
+      </div>
       <div class="linha1">
         <img src="images/line-sobrenos.png" alt="">
       </div>
@@ -305,7 +298,7 @@
 
     </section>
 
-    <section class="facaparte">
+    <section class="facaparte" id="facaparte">
       <div class="facaparte-span">
         <span>Seja um parceiro Integra</span>
       </div>
@@ -323,52 +316,43 @@
         <h1>Agende uma conversa</h1>
         <p>Estamos aqui para ouvir você. Entre em contato para agendar uma sessão ou tirar dúvidas sobre nossos serviços. Escolha a dorma de contato que preferir.</p>
       </div>
-      <div class="agendecnv-contato">
-        <div class="agendecnv-tele">
-          <div class="tele">
-            <img src="images/Property 1=Phone.png" alt="">
-            <h2>Telefone e WhatsApp</h2>
-            <Span>(62)99499-2741</Span>
-          </div>
+      <!-- ESTRUTURA CORRIGIDA AQUI -->
+      <div class="agendecnv-container">
+        <div class="agendecnv-card">
+          <img src="images/Property 1=Phone.png" alt="">
+          <h2>Telefone e WhatsApp</h2>
+          <span>(62)99499-2741</span>
         </div>
-        <div class="agendecnv-contato">
-          <div class="agendecnv-email">
-            <div class="email">
-              <img src="images/Property 1=Envelope.png" alt="">
-              <h2>E-mail</h2>
-              <Span>Contact@example.com</Span>
-            </div>
-          </div>
-          <div class="agendecnv-contato">
-            <div class="agendecnv-visita">
-              <div class="visita">
-                <img src="images/Property 1=Office.png" alt="">
-                <h2>Marque uma visita</h2>
-                <a href="#"><Span>Clique para agendar</Span></a>
-              </div>
-            </div>
+        <div class="agendecnv-card">
+          <img src="images/Property 1=Envelope.png" alt="">
+          <h2>E-mail</h2>
+          <span>Contact@example.com</span>
+        </div>
+        <div class="agendecnv-card">
+          <img src="images/Property 1=Office.png" alt="">
+          <h2>Marque uma visita</h2>
+          <a href="#"><span>Clique para agendar</span></a>
+        </div>
       </div>
     </section>
-    <section class="footer">
-      <footer>
+    
+    <footer>
+      <div class="footer-container">
         <div class="psiinfo">
-          <p>Psicóloga Responsável:</p>
-          Ivoneia Maria CRP 17629
-
+          <p>Psicóloga Responsável:<br>Ivoneia Maria CRP 17629</p>
         </div>
         <div class="direitos">
-          <p>$copy 2025 Integra. Todos os direitos reservados.</p>
+          <p>© 2025 Integra. Todos os direitos reservados.</p>
         </div>
         <div class="contatolist">
           <ul class="contatolistul">
-            <li><a href="#"><img src="images/mingcute_whatsapp-line.png" alt=""></a></li>
-            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="images/ic_outline-email.png" alt=""></a></li>
+            <li><a href="#"><img src="images/mingcute_whatsapp-line.png" alt="WhatsApp"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="images/ic_outline-email.png" alt="Email"></a></li>
           </ul>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
   </body>
-  <script src="./js/menu.js">
-  </script>
+  <script src="./js/menu.js"></script>
 </html>
